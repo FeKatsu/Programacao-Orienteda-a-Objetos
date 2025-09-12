@@ -85,6 +85,7 @@ L>Libera memória
 
 ~~~
 class Poligon {  //classe abstrata
+    public:
     virtual calcularArea();
 }
 
@@ -92,4 +93,36 @@ class Poligon {  //classe abstrata
 class Circulo()...
 class Retangulo()...
 class Quadrado : public Retangulo...
+~~~
+
+# Templates
+
+~~~
+template <typename T1, typename T2>
+
+T1 soma(T1a, T2b){
+    return a+b;
+}
+~~~
+---
+~~~
+soma <Gato, Gato > (*g1, *g2);
+
+soma < int, int>(10, 20);
+soma<Gato, int>(*g1, 7) //vai dar erro
+~~~
+
+~~~
+vector<int>list_int
+vector<Gato>list_gato
+~~~
+
+# namespace
+
+**std** -> standard
+~~~
+using namespace std;
+    float f;
+    std::cin>>f; //scanf()
+    std::cout<<f<<std::endl //endl = "\n", pular linha -> endline
 ~~~
