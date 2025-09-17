@@ -70,14 +70,14 @@ Gato(string.name, int age=0) -> valor padrão
 ## Operador new e delete
 
 ### new
-L>Ponteiro
+⮑Ponteiro
 
-L>Faz alocação de memória
+⮑Faz alocação de memória
 
 *Faz um malloc() para alocar memória*
 
 ### delete
-L>Libera memória
+⮑Libera memória
 
 *Faz um free()*
 
